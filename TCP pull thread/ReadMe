@@ -1,0 +1,14 @@
+Readme
+
+Instructions on Compiling Code and Usage:
+---------------------------------------------------------------------------
+1. to compile all executables and link files, run
+	make
+2. start one of the two servers
+	./server {portnumber} {number of strings in the array}: one mutex solution
+	./rwserver {portnumber} {number of strings in the array}: read/write lock
+3. run the bash script "./test.sh" to run the client 100 times
+	- ensure that the bash script is modified to match with the server's args
+
+If you wish to run the client without the bas script use
+	./client {portnumber} {number of strings in the array}
